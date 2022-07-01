@@ -1,4 +1,6 @@
 from pathlib import Path
+import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -120,3 +122,5 @@ AWS_ACCESS_KEY_ID = 'AKIARD6XCR75USZAOHHP'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_SES_REGION_NAME = 'us-east-1' #(ex: us-east-2)
 AWS_SES_REGION_ENDPOINT ='email.us-east-1.amazonaws.com' #(ex: email.us-east-2.amazonaws.com)
+
+django_heroku.settings(locals())
