@@ -4,3 +4,4 @@ django-registration
 django-crispy-forms
 django-ses
 django-heroku
+gunicorn
